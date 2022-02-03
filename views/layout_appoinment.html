@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Email from HTML</title>
+    <style>
+      .appoinmentHeader {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .appoinmentWrapper {
+        background: #eee;
+        padding: 10px;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .row > * {
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+        width: 50%;
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="appoinmentHeader">
+      New appoinment request raised. <br />
+      Please see the details as below.
+    </div>
+    <div class="appoinmentWrapper">
+      <div class="row">
+        <label>Name</label>
+        <h3>#name#</h3>
+      </div>
+      <div class="row">
+        <label>Email</label>
+        <h3>#email#</h3>
+      </div>
+      <div class="row">
+        <label>Mobile Number</label>
+        <h3>#phoneNo#</h3>
+      </div>
+      <div class="row">
+        <label>Date</label>
+        <h3>#date#</h3>
+      </div>
+      <div class="row">
+        <label>Time</label>
+        <h3>#time#</h3>
+      </div>
+      <div class="row">
+        <label>Department</label>
+        <h3>#department#</h3>
+      </div>
+    </div>
+  </body>
+</html>

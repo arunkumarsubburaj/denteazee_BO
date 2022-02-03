@@ -1,0 +1,20 @@
+{
+  "name": "danteazee_bo",
+  "version": "1.0.0",
+  "description": "node_mailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "keywords": [
+    "node-mailer"
+  ],
+  "author": "arunkumarsubburaj",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2"
+  }
+}
