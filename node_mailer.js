@@ -29,7 +29,7 @@ var sendMail = function (req, res) {
   var appoinmentStream = htmlParser("./views/layout_appoinment.html", req, res);
   var contactUsStream = htmlParser("./views/layout_contactus.html", req, res);
   var mailOptions = {
-    from: "arun123.sa@gmail.com", //replace with your email
+    from: req.body.email, //replace with your email
     to: "arun123.sa@gmail.com", //replace with your email
     subject:
       req.query.type == "contactus"
@@ -44,11 +44,10 @@ var sendMail = function (req, res) {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log(error);
-      res.send("error"); // if error occurs send error as response to client
+      res.json({ error }); // if error occurs send error as response to client
     } else {
       console.log("Email sent: " + info.response);
-      res.send("Sent Successfully"); //if mail is sent successfully send Sent successfully as response
+      res.json({ success: info.response }); //if mail is sent successfully send Sent successfully as response
     }
   });
 };
