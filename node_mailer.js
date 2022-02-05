@@ -31,6 +31,7 @@ var sendMail = function (req, res) {
   var mailOptions = {
     from: req.body.email, //replace with your email
     to: "arun123.sa@gmail.com", //replace with your email
+    cc: "siddhu.ss23@gmail.com",
     subject:
       req.query.type == "contactus"
         ? `New Contact Request`
